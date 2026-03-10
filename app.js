@@ -488,7 +488,7 @@ function renderProductPage(productId) {
     
     return `
         <div class="product-detail page-enter">
-            <button class="back-btn" onclick="${currentCategory ? `navigate('category', '${currentCategory}')` : 'navigate(\\'home\\')'}">
+            <button class="back-btn" onclick="navigate(currentCategory ? 'category' : 'home', currentCategory)">
                 ← Înapoi
             </button>
             
