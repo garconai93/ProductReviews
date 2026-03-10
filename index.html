@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review-uri Produse - Găsește cele mai bune produse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="#" class="logo" onclick="navigate('home')">
+                <span class="logo-icon">◈</span>
+                <span class="logo-text">Recenzii</span>
+            </a>
+            
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Caută produse..." class="search-input">
+                <button class="search-btn" onclick="searchProducts()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <nav class="nav">
+                <button class="nav-btn" onclick="navigate('home')">Acasă</button>
+                <button class="nav-btn" onclick="navigate('category', 'tech')">Tech</button>
+                <button class="nav-btn" onclick="navigate('category', 'home')">Casă</button>
+                <button class="nav-btn" onclick="navigate('category', 'beauty')">Frumusețe</button>
+                <button class="nav-btn" onclick="navigate('category', 'sports')">Sport</button>
+            </nav>
+            
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        
+        <div class="mobile-nav" id="mobileNav">
+            <button class="nav-btn" onclick="navigate('home')">Acasă</button>
+            <button class="nav-btn" onclick="navigate('category', 'tech')">Tech</button>
+            <button class="nav-btn" onclick="navigate('category', 'home')">Casă</button>
+            <button class="nav-btn" onclick="navigate('category', 'beauty')">Frumusețe</button>
+            <button class="nav-btn" onclick="navigate('category', 'sports')">Sport</button>
+        </div>
+    </header>
+
+    <main class="main" id="mainContent">
+        <!-- Content injected by JavaScript -->
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">◈</span>
+                    <span>Recenzii</span>
+                    <p class="footer-tagline">Găsește cele mai bune produse cu ajutorul comunității noastre.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Categorii</h4>
+                    <a href="#" onclick="navigate('category', 'tech')">Tech</a>
+                    <a href="#" onclick="navigate('category', 'home')">Casă</a>
+                    <a href="#" onclick="navigate('category', 'beauty')">Frumusețe</a>
+                    <a href="#" onclick="navigate('category', 'sports')">Sport</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="#">Termeni și condiții</a>
+                    <a href="#">Politica de confidențialitate</a>
+                    <a href="#">Despre noi</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Recenzii Produse. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
